@@ -9,5 +9,5 @@ RUN cd cdist && \
 
 EXPOSE 3000/tcp
 
-ENTRYPOINT ["cdist/bin/cdist", "trigger"]
-CMD ["--enable-beta", "--http-port", "3000", "-v"]
+ENTRYPOINT ["cdist/bin/cdist", "trigger", "--enable-beta", "-v"]
+CMD ["--http-port", "3000"]
