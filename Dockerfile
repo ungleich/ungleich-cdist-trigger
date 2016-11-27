@@ -4,4 +4,6 @@ MAINTAINER Carlos Ortigoza "carlos.ortigoza@ungleich.ch"
 
 EXPOSE 3000/tcp
 
-ENTRYPOINT ["/root/cdist/bin/cdist", "trigger", "--beta", "-v", "-d" ]
+COPY startup.sh /root/startup.sh
+
+ENTRYPOINT ["/root/startup.sh"]
