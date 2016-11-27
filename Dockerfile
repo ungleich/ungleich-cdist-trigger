@@ -4,4 +4,4 @@ MAINTAINER Carlos Ortigoza "carlos.ortigoza@ungleich.ch"
 
 EXPOSE 3000/tcp
 
-ENTRYPOINT ["/root/cdist/bin/cdist", "trigger", "--beta", "-v"]
+ENTRYPOINT ["/root/cdist/bin/cdist", "trigger", "--beta", "-v", "-d" ]
